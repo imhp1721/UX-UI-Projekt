@@ -3,9 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Links to stylesheets -->
+    <link rel="stylesheet" href="style.css"> <!--Our styling-->
+    <link rel="stylesheet" href="css_reset/thenew_reset.css"> <!--Reset-->
+
+    <!-- Link to javascript -->
+    <script src="script.js" defer></script>
+
     <title>Forside | Nippon</title>
 </head>
+
+<!----------------------------- 
+    Start of visible content
+ ----------------------------->
+
 <body>
-    
+
+    <!-- head section of page -->
+
+    <header>
+        <a class="logo_link" href="index.html">
+            <img class="logo_img" src="img/logo.png" alt="Nippon logo">
+        </a>
+        <nav class="nav_bar">
+            <ul class="menu">
+                <li class="menu_item">
+                    <a href="japansk_mad.html">JAPANSK MAD</a>
+                </li>
+                <li class="menu_item">
+                    <a href="maaltidskasser.html">MÅLTIDSKASSER</a>
+                </li>
+            </ul>
+            <ul class="menu">
+                <li class="menu_item">
+                    <a href="om_os.html">OM OS</a>
+                </li>
+                <li class="menu_item">
+                    <a href="kontakt.html">KONTAKT</a>
+                </li>
+                <li>
+                    <button class="cta_btn">LOG IND</button>
+                </li>
+                <dialog>
+                    <div>
+                        <!-- make pop-up for login / registration -->
+                    </div>
+                </dialog>
+            </ul>
+        </nav>
+        <img class="hero_img" src="img/index_hero.jpg" alt="Anrettede tallerkener">
+    </header>
+
+    <!-- main section of page -->
+
+    <main>
+
+    </main>
+
+    <!-- footer section of page -->
+
+    <footer>
+        <section class="kontakt">
+            <h6>KONTAKT</h6>
+            <p>Tlf.: 12 34 56 78</p>
+            <p>Mail: info@nippon.dk</p>
+            <address>
+                Aarhusvej 00
+                <br>
+                8000 Aarhus C
+            </address>
+        </section>
+        <section class="so_me">
+            <h6>SOCIALE MEDIER</h6>
+            <div>
+                <a href="https://www.facebook.com/">
+                    <img src="img/icons/fb.png" alt="Facebook logo">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="img/icons/ig.png" alt="Instagram logo">
+                </a>
+            </div>
+        </section>
+        <section class="om_os">
+            <h6>OM OS</h6>
+            <p>Nippon ApS</p>
+            <p>CVR: 0000 0000</p>
+        </section>
+        <form action="submit" class="tilmeld">
+            <input type="email" placeholder="example@mail.com" required>
+            <button class="cta_btn" type="submit">TILMELD NYHEDSBREV</button>
+        </form>
+    </footer>
 </body>
 </html>
