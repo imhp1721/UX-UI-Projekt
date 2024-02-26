@@ -165,6 +165,45 @@ video {
 }
 
 
+<<<<<<< Updated upstream
+=======
+=======
+
+
+
+>>>>>>> Stashed changes
+
+/*-----------------------------
+         Fejl - side 
+-----------------------------*/
+#fejl_overskrift{
+    font-family: var(--main_txt_font_fam);
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 12%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+#knap_t_fejl{
+    font-family: var(--main_txt_font_fam);
+    color: var(--clr_secondary_pastel);
+    margin-bottom: 3%;
+    margin-left: 43%;
+
+    /* styling af selve knappen */
+    padding: 15px;
+    border: var(--clr_1st_primary_medium);
+    border-radius: 10px;
+    background-color: var(--clr_1st_primary_medium);
+}
+
+#knap_t_fejl:hover{
+    
+}
+
+
+>>>>>>> Stashed changes
 /*---------------------------
     footer
 ----------------------------*/
@@ -264,6 +303,7 @@ footer h6 {
 
 
 
+<<<<<<< Updated upstream
 
 
 
@@ -822,3 +862,41 @@ footer h6 {
     z-index: -3; /* placerer billedet bag knappen, så knappens hover virker */
     margin-left: 32%;
 }
+=======
+/*-----------------------------
+Styling for maaltiderkasser
+-----------------------------*/
+.hero_section {
+    position: relative;
+}
+
+.headline_1 {
+    position: absolute; /* Change position to absolute */
+    z-index: 3;
+    left: 38%; /* Adjust left positioning as needed */
+    top: 20%; /* Adjust top positioning as needed */
+    padding: 1%;
+    top: 30%; /* Adjust top positioning as needed */
+    font-size: 4rem;
+    color: black; /* Set text color to ensure visibility */
+    background-color: var(--clr_secondary_pastel);
+    font-family:var(--header_font_fam)
+}
+
+.headline_2{
+   text-align: center;
+    padding: 2%;
+    font-size: 1.5rem;
+    font-family: var(--main_txt_font_fam);
+}
+
+div img{
+    width: 50px; /* Set width to make the icons smaller */
+    height: 50px; /* Set height to make the icons smaller */
+    margin-right: 10px; /* Add margin between icons for spacing */
+    display: 
+}
+   
+
+
+>>>>>>> Stashed changes
