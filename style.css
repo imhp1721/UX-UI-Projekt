@@ -355,12 +355,6 @@ Styling for maaltiderkasser
     font-family: var(--main_txt_font_fam);
 }
 
-div img {
-    width: 50px; /* Set width to make the icons smaller */
-    height: 50px; /* Set height to make the icons smaller */
-    margin-right: 10px; /* Add margin between icons for spacing */
-}
-
 .icons-container {
     display: grid;
     grid-template-columns:2fr 1fr;
