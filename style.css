@@ -6,7 +6,7 @@
 
 /* ---header font--- */
 
-@font-face {
+@font-face { 
     font-family: 'Mistral';
     font-style: normal;
     font-weight: normal;
@@ -804,18 +804,21 @@ footer h6 {
     font-family: var(--main_txt_font_fam);
     font-weight: bold;
     font-size: 2rem;
-    margin-top: 12%;
+    margin-top: 8%;
     margin-bottom: 2%;
     text-align: center;
 }
 
 /* Styling af position af fejl_knap */
 .fejl_knap{ 
-    margin-bottom: 3%;
     margin-left: 43%;
+    z-index: 3;
 }
 
 .fejl_img{
-    max-width: 40%;
-
+    max-width: 35%;
+    position: relative;
+    margin-top: -3%; /* placerer billede tættere på knappen */
+    z-index: -3; /* placerer billedet bag knappen, så knappens hover virker */
+    margin-left: 32%;
 }
