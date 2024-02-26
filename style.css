@@ -184,6 +184,8 @@ body {
     object-fit: cover;
     width: 100%;
 }
+
+
 /*---------------------------
     index
 ----------------------------*/
@@ -355,6 +357,7 @@ Styling for maaltiderkasser
     font-family: var(--main_txt_font_fam);
 }
 
+
 .icons-container {
     display: grid;
     grid-template-columns:2fr 1fr;
@@ -392,3 +395,7 @@ Styling for maaltiderkasser
     height: 100%;
     padding: 5%;
 }
+
+   
+
+
