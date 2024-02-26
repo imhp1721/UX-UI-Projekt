@@ -348,11 +348,13 @@ Styling for maaltiderkasser
     font-family:var(--header_font_fam)
 }
 
-.headline_2{
-   text-align: center;
+.headline_2 {
+    text-align: center;
     padding: 2%;
     font-size: 1.5rem;
     font-family: var(--main_txt_font_fam);
+    margin: 0 20%;
+    max-width: 60%;
 }
 
 .icons-container {
