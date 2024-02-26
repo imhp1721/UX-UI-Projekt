@@ -92,7 +92,6 @@ body {
 }
 
 /* ---call-to-action buttons--- */
-
 .cta_btn {
     background-color: var(--clr_1st_primary_medium);
     border: 2px solid var(--clr_tertiary_dark);
@@ -148,7 +147,6 @@ body {
     border-bottom: 1px solid var(--clr_1st_primary_light);
 }
 
-<<<<<<< Updated upstream
 .menu_item:hover > .sub_menu {
     opacity: 1;
     pointer-events: all;
@@ -180,15 +178,12 @@ body {
     border-bottom: 1px solid var(--clr_1st_primary_light);
 }
 
-=======
->>>>>>> Stashed changes
 .hero_img {
     height: 55vh;
     object-fit: cover;
     width: 100%;
 }
 
-<<<<<<< Updated upstream
 /*---------------------------
     index
 ----------------------------*/
@@ -201,20 +196,10 @@ video {
     width: 50%;
 }
 
-<<<<<<< Updated upstream
-=======
-
-=======
-
-
-
->>>>>>> Stashed changes
-
->>>>>>> Stashed changes
 /*-----------------------------
          Fejl - side 
 -----------------------------*/
-#fejl_overskrift{
+.fejl_overskrift{
     font-family: var(--main_txt_font_fam);
     font-weight: bold;
     font-size: 2rem;
@@ -223,9 +208,7 @@ video {
     text-align: center;
 }
 
-#knap_t_fejl{
-    font-family: var(--main_txt_font_fam);
-    color: var(--clr_secondary_pastel);
+#fejl_knap .cta_btn{
     margin-bottom: 3%;
     margin-left: 43%;
 
@@ -236,14 +219,6 @@ video {
     background-color: var(--clr_1st_primary_medium);
 }
 
-<<<<<<< Updated upstream
-=======
-#knap_t_fejl:hover{
-    
-}
-
-
->>>>>>> Stashed changes
 /*---------------------------
     footer
 ----------------------------*/
@@ -378,18 +353,11 @@ Styling for maaltiderkasser
     font-family: var(--main_txt_font_fam);
 }
 
-<<<<<<< Updated upstream
-div img {
-    width: 50px; /* Set width to make the icons smaller */
-    height: 50px; /* Set height to make the icons smaller */
-    margin-right: 10px; /* Add margin between icons for spacing */
-=======
 .icons-container {
     display: grid;
     grid-template-columns:2fr 1fr;
     gap: 3%;
     margin: 3%;
->>>>>>> Stashed changes
 }
 
 .icons-container h3{
