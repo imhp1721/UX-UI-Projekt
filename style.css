@@ -6,7 +6,7 @@
 
 /* ---header font--- */
 
-@font-face { 
+@font-face {
     font-family: 'Mistral';
     font-style: normal;
     font-weight: normal;
@@ -148,6 +148,7 @@ body {
     border-bottom: 1px solid var(--clr_1st_primary_light);
 }
 
+<<<<<<< Updated upstream
 .menu_item:hover > .sub_menu {
     opacity: 1;
     pointer-events: all;
@@ -179,12 +180,15 @@ body {
     border-bottom: 1px solid var(--clr_1st_primary_light);
 }
 
+=======
+>>>>>>> Stashed changes
 .hero_img {
     height: 55vh;
     object-fit: cover;
     width: 100%;
 }
 
+<<<<<<< Updated upstream
 /*---------------------------
     index
 ----------------------------*/
@@ -197,6 +201,16 @@ video {
     width: 50%;
 }
 
+<<<<<<< Updated upstream
+=======
+
+=======
+
+
+
+>>>>>>> Stashed changes
+
+>>>>>>> Stashed changes
 /*-----------------------------
          Fejl - side 
 -----------------------------*/
@@ -222,6 +236,14 @@ video {
     background-color: var(--clr_1st_primary_medium);
 }
 
+<<<<<<< Updated upstream
+=======
+#knap_t_fejl:hover{
+    
+}
+
+
+>>>>>>> Stashed changes
 /*---------------------------
     footer
 ----------------------------*/
@@ -356,11 +378,51 @@ Styling for maaltiderkasser
     font-family: var(--main_txt_font_fam);
 }
 
+<<<<<<< Updated upstream
 div img {
     width: 50px; /* Set width to make the icons smaller */
     height: 50px; /* Set height to make the icons smaller */
     margin-right: 10px; /* Add margin between icons for spacing */
+=======
+.icons-container {
+    display: grid;
+    grid-template-columns:2fr 1fr;
+    gap: 3%;
+    margin: 3%;
+>>>>>>> Stashed changes
 }
+
+.icons-container h3{
+    grid-area: titel;
+}
+
+.kost_icons {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    "titel titel titel" 
+    "img1 img2 img3" 
+    "img4 img5 img6";
+}
+.allergener_icons{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    "titel titel" 
+    "img1 img2" 
+    "img3 img4";
+}
+
+.kost_icons img {
+    height: 100%;
+    padding: 10%;
+}
+
+.allergener_icons img{
+    height: 100%;
+    padding: 5%;
+}
+
    
 
 
