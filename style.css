@@ -104,7 +104,7 @@ body {
 }
 
 .cta_btn:hover {
-    background-color: var(--clr_1st_primary_light)
+    background-color: var(--clr_1st_primary_light);
     color: var(--clr_tertiary_dark);
 }
 
@@ -146,6 +146,19 @@ body {
     object-fit: cover;
     width: 100%;
 }
+
+/*---------------------------
+    index
+----------------------------*/
+
+video {
+    border: 5px solid var(--clr_2nd_primary_medium);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px var(--clr_2nd_primary_dark);
+    margin: 2% 15%;
+    width: 70%;
+}
+
 
 
 /*---------------------------
