@@ -188,6 +188,36 @@ Styling for maaltiderkasser
 
 >>>>>>> Stashed changes
 
+/*-----------------------------
+         Fejl - side 
+-----------------------------*/
+#fejl_overskrift{
+    font-family: var(--main_txt_font_fam);
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 12%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+#knap_t_fejl{
+    font-family: var(--main_txt_font_fam);
+    color: var(--clr_secondary_pastel);
+    margin-bottom: 3%;
+    margin-left: 43%;
+
+    /* styling af selve knappen */
+    padding: 15px;
+    border: var(--clr_1st_primary_medium);
+    border-radius: 10px;
+    background-color: var(--clr_1st_primary_medium);
+}
+
+#knap_t_fejl:hover{
+    
+}
+
+
 /*---------------------------
     footer
 ----------------------------*/
