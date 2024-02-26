@@ -138,8 +138,32 @@ body {
     width: 40%;
 }
 
+.menu_item {
+    position: relative;
+}
+
 .menu_item:hover {
     border-bottom: 1px solid var(--clr_1st_primary_light);
+}
+
+.menu_item:hover > .sub_menu {
+    display: block;
+}
+
+.sub_menu {
+    background-color: var(--clr_secondary_pastel);
+    border-radius: 20px;
+    display: none;
+    left: 0;
+    min-width: 100%;
+    padding: 5%;
+    position: absolute;
+    text-wrap: nowrap;
+    top: calc(100% + .5rem);
+}
+
+.sub_menu_item {
+    padding: 2% 5% 2% 0;
 }
 
 .active_menu {
@@ -160,8 +184,8 @@ video {
     border: 5px solid var(--clr_2nd_primary_medium);
     border-radius: 10px;
     box-shadow: 5px 5px 10px var(--clr_2nd_primary_dark);
-    margin: 2% 15%;
-    width: 70%;
+    margin: 2% 25%;
+    width: 50%;
 }
 
 
