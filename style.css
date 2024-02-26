@@ -138,8 +138,32 @@ body {
     width: 40%;
 }
 
+.menu_item {
+    position: relative;
+}
+
 .menu_item:hover {
     border-bottom: 1px solid var(--clr_1st_primary_light);
+}
+
+.menu_item:hover > .sub_menu {
+    display: block;
+}
+
+.sub_menu {
+    background-color: var(--clr_secondary_pastel);
+    border-radius: 20px;
+    display: none;
+    left: 0;
+    min-width: 100%;
+    padding: 5%;
+    position: absolute;
+    text-wrap: nowrap;
+    top: calc(100% + .5rem);
+}
+
+.sub_menu_item {
+    padding: 2% 5% 2% 0;
 }
 
 .active_menu {
@@ -160,10 +184,34 @@ video {
     border: 5px solid var(--clr_2nd_primary_medium);
     border-radius: 10px;
     box-shadow: 5px 5px 10px var(--clr_2nd_primary_dark);
-    margin: 2% 15%;
-    width: 70%;
+    margin: 2% 25%;
+    width: 50%;
 }
 
+/*-----------------------------
+         Fejl - side 
+-----------------------------*/
+#fejl_overskrift{
+    font-family: var(--main_txt_font_fam);
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 12%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+#knap_t_fejl{
+    font-family: var(--main_txt_font_fam);
+    color: var(--clr_secondary_pastel);
+    margin-bottom: 3%;
+    margin-left: 43%;
+
+    /* styling af selve knappen */
+    padding: 15px;
+    border: var(--clr_1st_primary_medium);
+    border-radius: 10px;
+    background-color: var(--clr_1st_primary_medium);
+}
 
 /*---------------------------
     footer
@@ -264,561 +312,38 @@ footer h6 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*-----------------------------
-         Fejl - side 
+Styling for maaltiderkasser
 -----------------------------*/
-#fejl_overskrift{
-    font-family: var(--main_txt_font_fam);
-    font-weight: bold;
-    font-size: 2rem;
-    margin-top: 8%;
-    margin-bottom: 2%;
-    text-align: center;
-}
-
-/* Styling af position af fejl_knap */
-.fejl_knap{ 
-    margin-left: 43%;
-    z-index: 3;
-}
-
-.fejl_img{
-    max-width: 35%;
+.hero_section {
     position: relative;
-    margin-top: -3%; /* placerer billede tættere på knappen */
-    z-index: -3; /* placerer billedet bag knappen, så knappens hover virker */
-    margin-left: 32%;
 }
+
+.headline_1 {
+    position: absolute; /* Change position to absolute */
+    z-index: 3;
+    left: 38%; /* Adjust left positioning as needed */
+    top: 20%; /* Adjust top positioning as needed */
+    padding: 1%;
+    top: 30%; /* Adjust top positioning as needed */
+    font-size: 4rem;
+    color: black; /* Set text color to ensure visibility */
+    background-color: var(--clr_secondary_pastel);
+    font-family:var(--header_font_fam)
+}
+
+.headline_2{
+   text-align: center;
+    padding: 2%;
+    font-size: 1.5rem;
+    font-family: var(--main_txt_font_fam);
+}
+
+div img {
+    width: 50px; /* Set width to make the icons smaller */
+    height: 50px; /* Set height to make the icons smaller */
+    margin-right: 10px; /* Add margin between icons for spacing */
+}
+   
+
+
