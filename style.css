@@ -142,6 +142,10 @@ body {
     border-bottom: 1px solid var(--clr_1st_primary_light);
 }
 
+.active_menu {
+    border-bottom: 1px solid var(--clr_1st_primary_light);
+}
+
 .hero_img {
     height: 55vh;
     object-fit: cover;
