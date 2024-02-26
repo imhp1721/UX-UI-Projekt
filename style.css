@@ -167,7 +167,6 @@ video {
 
 footer {
     background-color: var(--clr_2nd_primary_dark);
-    border-top: 5px solid var(--clr_tertiary_dark);
     color: var(--clr_secondary_pastel);
     display: grid;
     gap: 3%;
