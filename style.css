@@ -30,7 +30,7 @@
 }
     
 @font-face {
-    font-family: 'Optima Bold';
+    font-family: 'Optima';
     font-style: normal;
     font-weight: bold;
     src: local('Optima Bold'), url('fonts/optima_bold.woff') format('woff');
@@ -104,7 +104,7 @@ body {
 }
 
 .cta_btn:hover {
-    background-color: var(--clr_1st_primary_light);
+    background-color: var(--clr_1st_primary_light)
     color: var(--clr_tertiary_dark);
 }
 
