@@ -115,6 +115,7 @@ body {
 .logo_img {
     left: 44vw;
     position: absolute;
+    top: 5px;
     width: 12vw;
     z-index: 3;
 }
@@ -142,28 +143,36 @@ body {
     position: relative;
 }
 
+.menu_item:focus,
 .menu_item:hover {
     border-bottom: 1px solid var(--clr_1st_primary_light);
 }
 
 .menu_item:hover > .sub_menu {
-    display: block;
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
 }
 
 .sub_menu {
     background-color: var(--clr_secondary_pastel);
-    border-radius: 20px;
-    display: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
+    font-size: calc(var(--xl_font_size)*0.85);
     left: 0;
     min-width: 100%;
+    opacity: 0;
     padding: 5%;
+    pointer-events: none;
     position: absolute;
     text-wrap: nowrap;
-    top: calc(100% + .5rem);
+    top: 105%;
+    transform: translateY(-30%);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
 }
 
-.sub_menu_item {
-    padding: 2% 5% 2% 0;
+.sub_menu_item:hover {
+    color: var(--clr_1st_primary_light);
 }
 
 .active_menu {
@@ -240,6 +249,10 @@ footer h6 {
     margin-bottom: 5%;
 }
 
+footer a:hover {
+    color: var(--clr_1st_primary_light);
+}
+
 .so_me {
     text-align: center;
 }
@@ -247,6 +260,10 @@ footer h6 {
 .so_me img {
     margin: 10px;
     width: 50px;
+}
+
+.so_me img:hover {
+    opacity: .6;
 }
 
 .om_os {
