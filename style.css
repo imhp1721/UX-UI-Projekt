@@ -116,6 +116,7 @@ body {
     left: 44vw;
     position: absolute;
     width: 12vw;
+    z-index: 3;
 }
 
 .logo_img:hover {
@@ -147,6 +148,7 @@ body {
     width: 100%;
 }
 
+<<<<<<< Updated upstream
 /*---------------------------
     index
 ----------------------------*/
@@ -160,6 +162,31 @@ video {
 }
 
 
+=======
+/*-----------------------------
+Styling for maaltiderkasser
+-----------------------------*/
+.hero_section {
+    position: relative;
+}
+
+.headline_1 {
+    position: absolute; /* Change position to absolute */
+    z-index: 3;
+    left: 38%; /* Adjust left positioning as needed */
+    top: 20%; /* Adjust top positioning as needed */
+    padding: 1%;
+    top: 30%; /* Adjust top positioning as needed */
+    font-size: 4rem;
+    color: black; /* Set text color to ensure visibility */
+    background-color: var(--clr_secondary_pastel);
+    font-family:var(--header_font_fam)
+}
+
+
+
+
+>>>>>>> Stashed changes
 
 /*---------------------------
     footer
