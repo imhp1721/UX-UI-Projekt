@@ -334,6 +334,7 @@ footer a:hover {
 
 
 
+
 /*-----------------------------
 Styling for maaltiderkasser
 -----------------------------*/
@@ -400,3 +401,144 @@ Styling for maaltiderkasser
     height: 100%;
     padding: 5%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- Billede karrusel ------- */
+.wrapper .carousel {
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden;
+    scroll-behavior: smooth; /* Smooth overgang, når man scroller */
+  }
+  
+  .carousel.dragging {
+    scroll-behavior: auto; /* Så scroll følger musen */
+    cursor: grab; /* Så pointer ændrer sig, når man scroller med musen (ikke med pilene) */
+  }
+  
+  .carousel.dragging img {
+    pointer-events: none; /* Så der ikke sker noget, når man trykker på billederne */
+  }
+  
+  .wrapper {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+    padding: 0 35px;
+  }
+  
+  .wrapper i {
+    top: 50%;
+    background: beige;
+    height: 45px;
+    width: 55px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    color: #484c22;
+    cursor: pointer;
+    font-size: 1.2rem;
+    position: absolute;
+    transform: translateY(-50%);
+  }
+  
+  .wrapper i:first-child {
+    left: 5px;
+    display: none; /* Så man ikke ser pilen til venstre til at starte med */
+  }
+  
+  .wrapper i:last-child {
+    right: -10px;
+  }
+  
+  
+  .carousel img {
+    height: 340px;
+    width: calc(100% / 3);
+    object-fit: cover;
+    border-radius: 5%;
+    border: 7px solid #484c22;
+    border-bottom: 7em solid #484c22;
+    margin-left: 14px;
+  }
