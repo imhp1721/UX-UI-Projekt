@@ -480,7 +480,33 @@ footer a:hover {
 
 
 
-/* ----------- Billede karrusel ------- */
+
+
+
+
+/* ---- Forside velkomsttekst --- */
+
+.forside_velkomst {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.forside_velkomst h1 {
+    font-size: 3em;
+    padding-top: 0.7em;
+    padding-bottom: 0.5em;
+}
+
+.forside_velkomst em {
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+
+/* --- Billede karrusel --- */
 
 /* Nyhedstekst */
 .forside_nyheder {
@@ -520,6 +546,7 @@ footer a:hover {
 
 .carousel_text a {
     color: var(--clr_1st_primary_light);
+    font-style: italic;
 }
 
 /* Selve karrusellen */
