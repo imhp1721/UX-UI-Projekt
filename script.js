@@ -97,8 +97,3 @@ carousel.addEventListener("mouseup", dragStop); // Stop drag, når musen ikke l�
 
 
 
-// ikon-toggle på undersiden "måltidskasser"
-
-function turnOff() {
-    let imageOn = 
-}
