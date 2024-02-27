@@ -148,6 +148,12 @@ body {
     border-bottom: 1px solid var(--clr_1st_primary_light);
 }
 
+.cart {
+    cursor: pointer;
+    padding: 0 10%;
+    width: 40px;
+}
+
 .menu_item:hover > .sub_menu {
     opacity: 1;
     pointer-events: all;
