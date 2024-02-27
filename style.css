@@ -480,12 +480,76 @@ footer a:hover {
 
 
 
-/* ----------- Billede karrusel ------- */
+
+
+
+
+/* ---- Forside velkomsttekst --- */
+
+.forside_velkomst {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.forside_velkomst h1 {
+    font-size: 3em;
+    padding-top: 0.7em;
+    padding-bottom: 0.5em;
+}
+
+.forside_velkomst em {
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+
+/* --- Billede karrusel --- */
+
+/* Nyhedstekst */
 .forside_nyheder {
     text-align: center;
     font-size: 3em;
     padding-top: 4%;
 }
+
+/* Text på karrusellen */
+.wrapper .carousel .carousel_item {
+    position: relative;
+    display: inline-block;
+}
+
+.wrapper .carousel .carousel_item .carousel_text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: var(--clr_secondary_pastel);
+    padding-left: 30px;
+}
+
+.wrapper .carousel .carousel_item img {
+    display: block;
+    width: 21em;
+}
+
+.carousel_text {
+   line-height: 1.5em;
+}
+
+.carousel_text h3 {
+    font-size: 1.5em;
+    font-family: var(--header_font_fam);
+    margin-top: -4em;
+}
+
+.carousel_text a {
+    color: var(--clr_1st_primary_light);
+    font-style: italic;
+}
+
+/* Selve karrusellen */
 .wrapper .carousel {
     white-space: nowrap;
     cursor: pointer;
@@ -527,6 +591,7 @@ footer a:hover {
     cursor: pointer;
     font-size: 1.2rem;
     position: absolute;
+    z-index: 1; /* Så pilene ikke forsvinder bag billederne */
     transform: translateY(-50%);
   }
   
