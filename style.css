@@ -481,8 +481,8 @@ footer a:hover {
 /* ----------- Billede karrusel ------- */
 .forside_nyheder {
     text-align: center;
-    font-size: 2.8rem;
-    padding-top: 5%;
+    font-size: 3em;
+    padding-top: 4%;
 }
 .wrapper .carousel {
     white-space: nowrap;
