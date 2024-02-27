@@ -108,6 +108,11 @@ body {
     color: var(--clr_tertiary_dark);
 }
 
+h1,
+h6 {
+    font-family: var(--header_font_fam);
+}
+
 /*---------------------------
     header and navigation
 ----------------------------*/
@@ -150,7 +155,6 @@ body {
 
 .cart {
     cursor: pointer;
-    padding: 0 10%;
     width: 40px;
 }
 
@@ -334,39 +338,35 @@ footer a:hover {
 
 
 
-/*-----------------------------
-Styling for maaltiderkasser
------------------------------*/
+/*------------------------------------------
+    Styling for maaltiderkasser underside
+--------------------------------------------*/
 .hero_section {
     position: relative;
 }
 
 .headline_1 {
-    position: absolute; /* Change position to absolute */
-    z-index: 3;
-    left: 38%; /* Adjust left positioning as needed */
-    top: 20%; /* Adjust top positioning as needed */
-    padding: 1%;
-    top: 30%; /* Adjust top positioning as needed */
-    font-size: 4rem;
-    color: black; /* Set text color to ensure visibility */
     background-color: var(--clr_secondary_pastel);
-    font-family:var(--header_font_fam)
+    font-size: 3.5rem;
+    left: 38%; /* Adjust left positioning as needed */
+    padding: 1%;
+    position: absolute; /* Change position to absolute */
+    top: 30%; /* Adjust top positioning as needed */
+    z-index: 3; /*Make sure headline is on top of hero-image*/
 }
 
 .headline_2 {
     text-align: center;
-    padding: 2%;
-    font-size: 1.5rem;
-    font-family: var(--main_txt_font_fam);
-    margin: 0 20%;
-    max-width: 60%;
+    padding: 5% 2%;
+    font-size: var(--xl_font_size);
+    margin: 0 10%;
+    max-width: 80%;
 }
 
 .icons-container {
-    display: grid;
-    grid-template-columns:2fr 1fr;
+    display: flex;
     gap: 3%;
+    justify-content: space-between;
     margin: 3%;
 }
 
