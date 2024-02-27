@@ -58,3 +58,47 @@ carousel.addEventListener("mousedown", dragStart); //Dragger billider, når mus 
 carousel.addEventListener("mousemove", dragging); //Når musen flytter sig skal dragging aktiveres
 carousel.addEventListener("mouseup", dragStop); // Stop drag, når musen ikke længere trykkes ned
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ikon-toggle på undersiden "måltidskasser"
+
+function turnOff() {
+    let imageOn = 
+}

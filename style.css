@@ -357,7 +357,7 @@ footer a:hover {
 
 .headline_2 {
     text-align: center;
-    padding: 5% 2%;
+    padding: 5% 2% 2%;
     font-size: var(--xl_font_size);
     margin: 0 10%;
     max-width: 80%;
@@ -371,34 +371,36 @@ footer a:hover {
 }
 
 .icons-container h3{
+    font-family: var(--header_font_fam);
+    font-size: 1.7rem;
     grid-area: titel;
+    padding-bottom: 3%;
 }
 
 .kost_icons {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
     "titel titel titel" 
     "img1 img2 img3" 
     "img4 img5 img6";
 }
+
 .allergener_icons{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
     "titel titel" 
     "img1 img2" 
     "img3 img4";
 }
 
-.kost_icons img {
-    height: 100%;
-    padding: 10%;
-}
-
-.allergener_icons img{
-    height: 100%;
-    padding: 5%;
+.kost_icons img,
+.allergener_icons img {
+    height: 100px;
+    max-width: 10vw;
 }
 
 
