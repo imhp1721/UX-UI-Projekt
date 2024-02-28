@@ -62,18 +62,19 @@ carousel.addEventListener("mouseup", dragStop); // Stop drag, n√•r musen ikke l√
 
 /*---Nyhedsbrev POP-UP---*/ //OBS! Pop-up virker ikke endnu
 
+/*
 document.addEventListener("DOMContentLoaded", function() {
     // Delay in milliseconds before showing the popup
-    const delayInMilliseconds = 4000; // 4 seconds
+    const delayPopUp = 4000; // 4 seconds
+    const tilmeldPopUp = document.getElementById("tilmeld_pop_up");
   
     // Function to show the popup
     function openPopup() {
-      const tilmeldPopUp = document.getElementById("tilmeld_pop_up");
-      tilmeldPopUp.showModal();
+      tilmeldPopUp.showModal()
     }
   
     // Set a timeout to call the showPopup function after the delay
-    setTimeout(openPopup, delayInMilliseconds);
+    setTimeout(openPopup, delayPopUp);
   
     // Close the popup when the close button is clicked
     const closePopUp = document.getElementById("close_pop_up");
@@ -82,4 +83,4 @@ document.addEventListener("DOMContentLoaded", function() {
       tilmeldPopUp.close();
     });
   });
-  
+*/
