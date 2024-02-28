@@ -64,7 +64,7 @@ carousel.addEventListener("mouseup", dragStop); // Stop drag, n√•r musen ikke l√
 
 document.addEventListener("DOMContentLoaded", function() {
     // Delay in milliseconds before showing the popup
-    const delayInMilliseconds = 4000; // 5 seconds
+    const delayInMilliseconds = 4000; // 4 seconds
   
     // Function to show the popup
     function openPopup() {
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   
     // Set a timeout to call the showPopup function after the delay
-    setTimeout(showPopup, delayInMilliseconds);
+    setTimeout(openPopup, delayInMilliseconds);
   
     // Close the popup when the close button is clicked
     const closePopUp = document.getElementById("close_pop_up");
