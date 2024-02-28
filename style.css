@@ -294,7 +294,7 @@ video {
     width: 90%;
     margin-right: auto;
     margin-left: auto;
-    margin-top: -8%;
+    margin-top: -12%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -327,7 +327,6 @@ video {
   .wrapper i:last-child {
     right: -10px;
   }
-  
   
   .carousel img {
     height: 340px;
