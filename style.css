@@ -208,6 +208,7 @@ video {
     margin: 2% 25%;
     width: 50%;
 }
+
 /* ---- Forside velkomsttekst --- */
 
 .forside_velkomst {
@@ -229,7 +230,6 @@ video {
     font-size: 1.2em;
 }
 
-
 /* --- Billede karrusel --- */
 
 /* Nyhedstekst */
@@ -240,6 +240,7 @@ video {
 }
 
 /* Text på karrusellen */
+
 .wrapper .carousel .carousel_item {
     position: relative;
     display: inline-block;
