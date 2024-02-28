@@ -38,21 +38,35 @@ openReste.addEventListener("click", () => {
 })
 
 /*---counters---*/
+
+function tempAlert(message) {
+    alert(message);
+}
+
 const plusPs = document.getElementById("plus_ps");
 const numPs = document.getElementById("ps_num");
 const minusPs = document.getElementById("minus_ps");
 
 let ps = 1;
 
+const minPs = 1;
+const maxPs = 8;
+
 plusPs.addEventListener("click", ()=>{
-    ps++;
-    numPs.innerText = ps;
+    if(ps < maxPs){
+        ps++;
+        numPs.innerText = ps;
+    } else {
+        tempAlert("Du kan ikke vælge flere end " + maxPs + " personer.")
+    }
 });
 
 minusPs.addEventListener("click", ()=>{
     if(ps > 1){
         ps--;
         numPs.innerText = ps;
+    } else {
+        tempAlert("Du kan ikke vælge færre end " + minPs + " person.")
     }
 });
 
@@ -62,14 +76,23 @@ const minusDg = document.getElementById("minus_dg");
 
 let dg = 3;
 
+const minDg = 3;
+const maxDg = 7;
+
 plusDg.addEventListener("click", ()=>{
-    dg++;
+    if (dg < 7) {
+        dg++;
     numDg.innerText = dg;
+    } else {
+        tempAlert("Du kan ikke vælge flere end " + maxDg + " dage.")
+    }
 });
 
 minusDg.addEventListener("click", ()=>{
     if(dg > 3){
         dg--;
         numDg.innerText = dg;
+    } else {
+        tempAlert("Du kan ikke vælge færre end " + minDg + " dage.")
     }
 });
