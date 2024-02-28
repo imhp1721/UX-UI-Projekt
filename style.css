@@ -495,6 +495,78 @@ margin-left: 14px;
     padding: 2%;
 }
 
+/* pop-up */
+
+#pop_up_reste {
+    background-color: var(--clr_2nd_primary_dark);
+    border: 1px solid var(--clr_2nd_primary_dark);
+    border-radius: 10px;
+    margin: 5% 5% 5% 20%;
+    max-width: 75vw;
+    padding: 0;
+}
+
+#pop_up_reste > h4 {
+    font-size: 3rem;
+    left: 40%;
+    position: absolute;
+    top: 5%;
+}
+
+#pop_up_reste section {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: 
+    "change change"
+    "txt_left txt_right";
+}
+
+#pop_up_reste .change_icons {
+    display: flex;
+    gap: 10%;
+    grid-area: change;
+    justify-content: center;
+}
+
+.change_num {
+    align-items: center;
+    color: var(--clr_secondary_pastel);
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+}
+
+.change_num img {
+    width: 50%;
+}
+
+.change_num > div {
+    align-items: center;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    width: 100%;
+}
+
+.change_num button {
+    background-color: var(--clr_1st_primary_light);
+    border-radius: 3rem;
+    cursor: pointer;
+    margin: 10%;
+    padding: 0 .5rem;
+}
+
+.pop_up_txt p {
+    color: var(--clr_secondary_pastel);
+    padding: 5% 10%;
+}
+
+.pop_up_txt .cta_btn {
+    border: 1px solid var(--clr_secondary_pastel);
+    margin-left: 70%;
+    padding: 10px 20px;
+}
+
 /*------------------
     Fejl - side 
 -------------------*/
