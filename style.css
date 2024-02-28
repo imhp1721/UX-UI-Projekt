@@ -100,7 +100,7 @@ body {
     color: var(--clr_secondary_pastel);
     cursor: pointer;
     max-width: fit-content;
-    padding: 5%;
+    padding: 5% 8%;
     text-wrap: nowrap;
 }
 
@@ -120,10 +120,10 @@ h6 {
 ----------------------------*/
 
 .logo_img {
-    left: 44vw;
+    left: 44%;
     position: absolute;
     top: 5px;
-    width: 12vw;
+    width: 12%;
     z-index: 3;
 }
 
@@ -143,7 +143,7 @@ h6 {
     font-size: var(--xl_font_size);
     justify-content: space-between;
     padding: 2% 3% 1%;
-    width: 40%;
+    width: 42%;
 }
 
 .menu_item {
@@ -197,6 +197,7 @@ h6 {
     object-fit: cover;
     width: 100%;
 }
+
 /*---------------------------
     index
 ----------------------------*/
@@ -225,14 +226,16 @@ video {
     padding-bottom: 0.5em;
 }
 
-.forside_velkomst em {
+.forside_velkomst h5 {
     font-style: italic;
     font-size: 1.2em;
+    margin: 2%;
 }
 
 /* --- Billede karrusel --- */
 
 /* Nyhedstekst */
+
 .forside_nyheder {
     text-align: center;
     font-size: 3em;
@@ -576,7 +579,9 @@ footer a:hover {
 .tilmeld {
     display: flex;
     grid-area: tilmeld;
-    margin: 3% auto;
+    justify-content: center;
+    margin: 2% 0;
+    width: 100%;
 }
 
 .tilmeld input {
@@ -584,5 +589,10 @@ footer a:hover {
     border-radius: 10px;
     color: var(--clr_tertiary_dark);
     margin: 0 1%;
-    padding: 2%;
+    padding: 1%;
+}
+
+.tilmeld .cta_btn {
+    border: 1px solid var(--clr_secondary_pastel);
+    padding: 1%;
 }
