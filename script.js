@@ -59,3 +59,27 @@ const dragStop = () => {
 carousel.addEventListener("mousedown", dragStart); //Dragger billider, når mus er nede
 carousel.addEventListener("mousemove", dragging); //Når musen flytter sig skal dragging aktiveres
 carousel.addEventListener("mouseup", dragStop); // Stop drag, når musen ikke længere trykkes ned
+
+/*---Nyhedsbrev POP-UP---*/ //OBS! Pop-up virker ikke endnu
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Delay in milliseconds before showing the popup
+    const delayInMilliseconds = 4000; // 5 seconds
+  
+    // Function to show the popup
+    function openPopup() {
+      const tilmeldPopUp = document.getElementById("tilmeld_pop_up");
+      tilmeldPopUp.showModal();
+    }
+  
+    // Set a timeout to call the showPopup function after the delay
+    setTimeout(showPopup, delayInMilliseconds);
+  
+    // Close the popup when the close button is clicked
+    const closePopUp = document.getElementById("close_pop_up");
+    closePopUp.addEventListener("click", function() {
+      const tilmeldPopUp = document.getElementById("tilmeld_pop_up");
+      tilmeldPopUp.close();
+    });
+  });
+  

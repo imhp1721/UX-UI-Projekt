@@ -210,6 +210,12 @@ video {
     width: 50%;
 }
 
+/*--- nyhedsbrev pop-up ---*/
+
+.tilmeld_pop_up {
+    width: 50%;
+}
+
 /* ---- Forside velkomsttekst --- */
 
 .forside_velkomst {
