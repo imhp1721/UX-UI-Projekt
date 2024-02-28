@@ -379,10 +379,9 @@ margin-left: 14px;
 
 .icons-container h3{
     font-family: var(--header_font_fam);
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     grid-area: titel;
-    margin: 3%;
-    text-wrap: nowrap;
+    padding-bottom: 3%;
 }
 
 .kost_icons {
