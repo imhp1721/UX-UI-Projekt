@@ -506,11 +506,23 @@ margin-left: 14px;
     padding: 0;
 }
 
+#pop_up_reste::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
 #pop_up_reste > h4 {
     font-size: 3rem;
     left: 40%;
     position: absolute;
     top: 5%;
+}
+
+#close_reste {
+    cursor: pointer;
+    left: 2%;
+    position: absolute;
+    top: 2%;
+    width: 30px;
 }
 
 #pop_up_reste section {

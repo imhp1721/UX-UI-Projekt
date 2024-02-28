@@ -31,11 +31,27 @@ iconImgs.forEach(function(img) {
 /*---POPUP---*/
 
 const openReste = document.getElementById("open_reste");
+const closeReste = document.getElementById("close_reste");
 const popUpReste = document.getElementById("pop_up_reste");
 
+// Vis pop-up ved klik på "læs mere"
 openReste.addEventListener("click", () => {
     popUpReste.showModal()
 })
+
+// Tilføj lukning ved klik på kryds
+closeReste.addEventListener("click", () => {
+    popUpReste.close()
+})
+
+// Tilføj lukning ved klik udenfor pop-up
+popUpReste.addEventListener("click", (event) => {
+    // Hvis det klikkede element er dialogens baggrund
+    if (event.target === popUpReste) {
+        // Luk dialogen
+        popUpReste.close();
+    }
+});
 
 /*---counters---*/
 
