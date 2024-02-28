@@ -201,6 +201,13 @@ h6 {
     index
 ----------------------------*/
 
+video {
+    border: 5px solid var(--clr_2nd_primary_medium);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px var(--clr_2nd_primary_dark);
+    margin: 2% 25%;
+    width: 50%;
+}
 /* ---- Forside velkomsttekst --- */
 
 .forside_velkomst {
@@ -222,13 +229,6 @@ h6 {
     font-size: 1.2em;
 }
 
-video {
-    border: 5px solid var(--clr_2nd_primary_medium);
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px var(--clr_2nd_primary_dark);
-    margin: 2% 25%;
-    width: 50%;
-}
 
 /* --- Billede karrusel --- */
 
@@ -274,7 +274,6 @@ video {
 }
 
 /* Selve karrusellen */
-
 .wrapper .carousel {
     white-space: nowrap;
     cursor: pointer;
@@ -328,6 +327,7 @@ video {
   .wrapper i:last-child {
     right: -10px;
   }
+  
   
   .carousel img {
     height: 340px;
