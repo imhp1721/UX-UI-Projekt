@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css_reset/thenew_reset.css"> <!--Reset-->
 
     <!-- Link to javascript -->
-    <script src="script.js" defer></script>
+    <script src="maaltids.js" defer></script>
 
     <title>Måltidskasser | Nippon</title>
 </head>
@@ -67,7 +67,9 @@
                 <li>
                     <button class="cta_btn">LOG IND</button>
                 </li>
-                <img class="cart" src="img/icons/cart.svg" alt="Kurv">
+                <li class="menu_item">
+                    <img class="cart" src="img/icons/cart.svg" alt="Kurv">
+                </li>
             </ul>
         </nav>
 
@@ -82,30 +84,58 @@
     <!-- main section of page -->
 
     <main>
-        <h2 class="headline_2">Hos Nippon finder du Japanske<br> måltidskasser til ethvert behov, og i alle en <br>prisklasse hvor alle kan følge med</h2>
-
-        <!-- Icon toggle section -->
+    
+        <h2 class="headline_2">Hos Nippon finder du japanske måltidskasser til ethvert behov, i alle prisklasser, så alle kan følge med!</h2>
 
         <section class="icons-container">
             <div class="kost_icons">
                 <h3>VÆLG DINE KOSTPRÆFERENCER</h3>
-                <img src="img/icons/vegetar.svg" alt="vegetar ikon">
-                <img src="img/icons/vegansk.svg" alt="vegansk ikon">
-                <img src="img/icons/koed.svg" alt="koed ikon">
-                <img src="img/icons/fisk.svg" alt="fisk ikon">
-                <img src="img/icons/chili.svg" alt="chili ikon">
-                <img src="img/icons/oekologi.svg" alt="oekologi ikon">
+                <img class="icon_imgs" src="img/icons/vegetar_off.svg" 
+                    data-on-src="img/icons/vegetar.svg" 
+                    data-off-src="img/icons/vegetar_off.svg" 
+                    alt="vegetar ikon">
+                <img class="icon_imgs" src="img/icons/vegansk_off.svg" 
+                    data-on-src="img/icons/vegansk.svg" 
+                    data-off-src="img/icons/vegansk_off.svg" 
+                    alt="vegansk ikon">
+                <img class="icon_imgs" src="img/icons/koed_off.svg" 
+                    data-on-src="img/icons/koed.svg" 
+                    data-off-src="img/icons/koed_off.svg" 
+                    alt="kød ikon">
+                <img class="icon_imgs" src="img/icons/fisk_off.svg" 
+                    data-on-src="img/icons/fisk.svg" 
+                    data-off-src="img/icons/fisk_off.svg" 
+                    alt="fisk ikon">
+                <img class="icon_imgs" src="img/icons/chili_off.svg" 
+                    data-on-src="img/icons/chili.svg" 
+                    data-off-src="img/icons/chili_off.svg" 
+                    alt="chili ikon">
+                <img class="icon_imgs" src="img/icons/oekologi_off.svg" 
+                    data-on-src="img/icons/oekologi.svg" 
+                    data-off-src="img/icons/oekologi_off.svg" 
+                    alt="oekologi ikon">
             </div>
 
             <div class="allergener_icons">
                 <h3>VÆLG DINE ALLERGENER</h3>
-                <img src="img/icons/noeddefri.svg" alt="noeddefri ikon">
-                <img src="img/icons/laktosefri.svg" alt="laktosefri ikon">
-                <img src="img/icons/glutenfri.svg" alt="glutenfri ikon">
-                <img src="img/icons/skaldyr.svg" alt="skaldyr ikon">
+                <img class="icon_imgs" src="img/icons/noeddefri_off.svg" 
+                    data-on-src="img/icons/noeddefri.svg" 
+                    data-off-src="img/icons/noeddefri_off.svg" 
+                    alt="noeddefri ikon">
+                <img class="icon_imgs" src="img/icons/laktosefri_off.svg" 
+                    data-on-src="img/icons/laktosefri.svg" 
+                    data-off-src="img/icons/laktosefri_off.svg" 
+                    alt="laktosefri ikon">
+                <img class="icon_imgs" src="img/icons/glutenfri_off.svg" 
+                    data-on-src="img/icons/glutenfri.svg" 
+                    data-off-src="img/icons/glutenfri_off.svg" 
+                    alt="glutenfri ikon">
+                <img class="icon_imgs" src="img/icons/skaldyr_off.svg" 
+                    data-on-src="img/icons/skaldyr.svg" 
+                    data-off-src="img/icons/skaldyr_off.svg" 
+                    alt="skaldyr ikon">
             </div>
         </section>
-        <!-- Måltidskasser grid -->
 
         <section class="kasser_grid">
             <div class="restekassen">
@@ -113,19 +143,15 @@
                 <h4>RESTEKASSEN</h4>
                 <p class="kasse_pris">Fra 359 kr.</p>
                 <div class="kasse_indhold">
-                    <div class="kasse_basics">
-                        <div class="kasse_pers">
-                            <img src="img/icons/person.svg" alt="Antal personer">
-                            <p>1+</p>
-                        </div>
-                        <div class="kasse_tid">
-                            <img src="img/icons/tid.svg" alt="Tilberedningstid">
-                            <p>15 min</p>
-                        </div>
-                        <div class="kasse_dage">
-                            <img src="img/icons/dage.svg" alt="Antal dage">
-                            <p>4+ dage</p>
-                        </div>
+                    <div class="kasse_info_icons">
+                        <img src="img/icons/person.svg" alt="Antal personer">
+                        <img src="img/icons/tid.svg" alt="Tilberedningstid">
+                        <img src="img/icons/dage.svg" alt="Antal dage">
+                    </div>
+                    <div class="kasse_info_icons_txt">
+                        <p>1+</p>
+                        <p>15 min</p>
+                        <p>4+ dage</p>
                     </div>
                     <p class="kasse_info_txt">I denne måltidskasse får du opskrifter på retter, hvor der altid er rester til dagen efter.</p>
                     <div class="kasse_food_icons">
@@ -161,10 +187,13 @@
 
     <footer>
         <section class="kontakt">
-            <h6>KONTAKT</h6>
+            <h6>
+                <a href="kontakt.html">KONTAKT</a>
+            </h6>
             <p>Tlf.: 12 34 56 78</p>
             <p>Mail: info@nippon.dk</p>
             <address>
+                <br>
                 Aarhusvej 00
                 <br>
                 8000 Aarhus C
@@ -182,9 +211,14 @@
             </div>
         </section>
         <section class="om_os">
-            <h6>OM OS</h6>
+            <h6>
+                <a href="om_os.html">OM OS</a>
+            </h6>
             <p>Nippon ApS</p>
             <p>CVR: 0000 0000</p>
+            <h6>
+                <a href="#allergener"><br> ALLERGENER</a>
+            </h6>
         </section>
         <form action="submit" class="tilmeld">
             <input type="email" placeholder="example@mail.com" required>
