@@ -1,3 +1,5 @@
+// THIS IS JAVASCRIPT FOR THE SUBPAGE MAALTIDSKASSER.HTML
+
 // Get all the icons
 let iconImgs = document.querySelectorAll(".icon_imgs");
 

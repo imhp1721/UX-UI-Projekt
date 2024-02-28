@@ -99,7 +99,8 @@ body {
     border-radius: 10px;
     color: var(--clr_secondary_pastel);
     cursor: pointer;
-    padding: 10px;
+    max-width: fit-content;
+    padding: 5%;
     text-wrap: nowrap;
 }
 
@@ -196,9 +197,31 @@ h6 {
     object-fit: cover;
     width: 100%;
 }
+
 /*---------------------------
     index
 ----------------------------*/
+
+/* ---- Forside velkomsttekst --- */
+
+.forside_velkomst {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.forside_velkomst h1 {
+    font-size: 3em;
+    padding-top: 0.7em;
+    padding-bottom: 0.5em;
+}
+
+.forside_velkomst em {
+    font-style: italic;
+    font-size: 1.2em;
+}
 
 video {
     border: 5px solid var(--clr_2nd_primary_medium);
@@ -208,9 +231,273 @@ video {
     width: 50%;
 }
 
+/* --- Billede karrusel --- */
+
+/* Nyhedstekst */
+.forside_nyheder {
+    text-align: center;
+    font-size: 3em;
+    padding-top: 4%;
+}
+
+/* Text på karrusellen */
+.wrapper .carousel .carousel_item {
+    position: relative;
+    display: inline-block;
+}
+
+.wrapper .carousel .carousel_item .carousel_text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: var(--clr_secondary_pastel);
+    padding-left: 30px;
+}
+
+.wrapper .carousel .carousel_item img {
+    display: block;
+    width: 21em;
+}
+
+.carousel_text {
+   line-height: 1.5em;
+}
+
+.carousel_text h3 {
+    font-size: 1.5em;
+    font-family: var(--header_font_fam);
+    margin-top: -4em;
+}
+
+.carousel_text a {
+    color: var(--clr_1st_primary_light);
+    font-style: italic;
+}
+
+/* Selve karrusellen */
+
+.wrapper .carousel {
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden;
+    scroll-behavior: smooth; /* Smooth overgang, når man scroller */
+  }
+  
+  .carousel.dragging {
+    scroll-behavior: auto; /* Så scroll følger musen */
+    cursor: grab; /* Så pointer ændrer sig, når man scroller med musen (ikke med pilene) */
+  }
+  
+  .carousel.dragging img {
+    pointer-events: none; /* Så der ikke sker noget, når man trykker på billederne */
+  }
+  
+  .wrapper {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+    padding: 0 35px;
+  }
+  
+  .wrapper i {
+    top: 50%;
+    background: var(--clr_2nd_primary_dark);
+    height: 45px;
+    width: 55px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    color: var(--clr_secondary_pastel);
+    cursor: pointer;
+    font-size: 1.2rem;
+    position: absolute;
+    z-index: 1; /* Så pilene ikke forsvinder bag billederne */
+    transform: translateY(-50%);
+  }
+  
+  .wrapper i:first-child {
+    left: 5px;
+    display: none; /* Så man ikke ser pilen til venstre til at starte med */
+  }
+  
+  .wrapper i:last-child {
+    right: -10px;
+  }
+  
+  
+  .carousel img {
+    height: 340px;
+    width: calc(100% / 3);
+    object-fit: cover;
+    border-radius: 5%;
+    border: 7px solid #484c22;
+    border-bottom: 7em solid #484c22;
+    margin-left: 14px;
+  }
+
+/*------------------------------------------
+    Styling for maaltiderkasser underside
+--------------------------------------------*/
+
+.hero_section {
+    position: relative;
+}
+
+.headline_1 {
+    background-color: var(--clr_secondary_pastel);
+    font-size: 3.5rem;
+    left: 38%; /* Adjust left positioning as needed */
+    padding: 1%;
+    position: absolute; /* Change position to absolute */
+    top: 30%; /* Adjust top positioning as needed */
+    z-index: 3; /*Make sure headline is on top of hero-image*/
+}
+
+.headline_2 {
+    text-align: center;
+    padding: 5% 2% 2%;
+    font-size: var(--xl_font_size);
+    margin: 0 10%;
+    max-width: 80%;
+}
+
+/*--- Icon section ---*/
+
+.icons-container {
+    display: flex;
+    gap: 3%;
+    justify-content: space-between;
+    margin: 3% 5%;
+}
+
+.icons-container h3{
+    font-family: var(--header_font_fam);
+    font-size: 1.7rem;
+    grid-area: titel;
+    padding-bottom: 3%;
+}
+
+.kost_icons {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "titel titel titel" 
+    "img1 img2 img3" 
+    "img4 img5 img6";
+}
+
+.allergener_icons{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "titel titel" 
+    "img1 img2" 
+    "img3 img4";
+}
+
+.kost_icons img,
+.allergener_icons img {
+    height: 110px;
+    max-width: 15vw;
+}
+
+/*--- Måltidskasser grid section ---*/
+
+.kasser_grid {
+    display: grid;
+    grid-gap: 3%;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 5% 3% 10%;
+}
+
+.restekassen {
+    background-color: var(--clr_2nd_primary_dark);
+    border-radius: 10px;
+    margin: .5%;
+    position: relative;
+}
+
+.kasse_img {
+    padding: 8% 5% 1%;
+}
+
+.restekassen h4 {
+    font-size: 1.8rem;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+}
+
+.kasse_pris {
+    font-size: 1.5rem;
+    font-weight: 600;
+    left: 35%;
+    position: absolute;
+    top: 18%;
+}
+
+.kasse_indhold {
+    color: var(--clr_secondary_pastel);
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+}
+
+.kasse_basics {
+    display: flex;
+    gap: 5%;
+    margin-bottom: 3%;
+}
+
+.kasse_basics img {
+    height: 40px;
+}
+
+.kasse_pers,
+.kasse_tid,
+.kasse_dage {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    font-weight: 600;
+    gap: 5%;
+}
+
+.kasse_info_txt {
+    font-size: 1.1rem;
+    line-height: 1.25rem;
+    margin-bottom: 3%;
+}
+
+.kasse_food_icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.kasse_food_icons img {
+    max-width: 15%;
+}
+
+.kasse_indhold .cta_btn {
+    border: 1px solid var(--clr_secondary_pastel);
+    font-size: 1rem;
+    margin: 5% 0;
+    padding: 2%;
+}
+
 /*-----------------------------
          Fejl - side 
 -----------------------------*/
+
 #fejl_overskrift{
     font-family: var(--main_txt_font_fam);
     font-weight: bold;
@@ -294,386 +581,3 @@ footer a:hover {
     margin: 0 1%;
     padding: 2%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*------------------------------------------
-    Styling for maaltiderkasser underside
---------------------------------------------*/
-.hero_section {
-    position: relative;
-}
-
-.headline_1 {
-    background-color: var(--clr_secondary_pastel);
-    font-size: 3.5rem;
-    left: 38%; /* Adjust left positioning as needed */
-    padding: 1%;
-    position: absolute; /* Change position to absolute */
-    top: 30%; /* Adjust top positioning as needed */
-    z-index: 3; /*Make sure headline is on top of hero-image*/
-}
-
-.headline_2 {
-    text-align: center;
-    padding: 5% 2% 2%;
-    font-size: var(--xl_font_size);
-    margin: 0 10%;
-    max-width: 80%;
-}
-
-.icons-container {
-    display: flex;
-    gap: 3%;
-    justify-content: space-between;
-    margin: 3%;
-}
-
-.icons-container h3{
-    font-family: var(--header_font_fam);
-    font-size: 1.7rem;
-    grid-area: titel;
-    padding-bottom: 3%;
-}
-
-.kost_icons {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-    "titel titel titel" 
-    "img1 img2 img3" 
-    "img4 img5 img6";
-}
-
-.allergener_icons{
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    "titel titel" 
-    "img1 img2" 
-    "img3 img4";
-}
-
-.kost_icons img,
-.allergener_icons img {
-    height: 100px;
-    max-width: 10vw;
-}
-
-.kasser_grid {
-    display: grid;
-    grid-gap: 3%;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 5% 3% 10%;
-}
-
-.restekassen {
-    background-color: var(--clr_2nd_primary_dark);
-    border-radius: 10px;
-    margin: .5%;
-    position: relative;
-}
-
-.kasse_img {
-    padding: 8% 5% 3%;
-}
-
-.restekassen h4 {
-    font-size: 1.8rem;
-    position: absolute;
-    top: 3%;
-    left: 30%;
-}
-
-.kasse_pris {
-    font-size: 1.5rem;
-    font-weight: 600;
-    left: 35%;
-    position: absolute;
-    top: 10%;
-}
-
-.kasse_indhold {
-    color: var(--clr_secondary_pastel);
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    margin: 0 5%;
-}
-
-.kasse_indhold img {
-    max-width: 15%;
-}
-
-.kasse_info_icons {
-    grid-area: 1 / 1 / 2 / 4;
-}
-
-.kasse_info_icons_txt {
-    display: flex;
-    grid-area: 2 / 1 / 3 / 4;
-    text-wrap: nowrap;
-}
-
-.kasse_info_txt {
-    font-size: 1.1rem;
-    grid-area: 3 / 1 / 4 / 7;
-}
-
-.kasse_food_icons {
-    grid-area: 4 / 1 / 5 / 7;
-}
-
-.kasse_indhold .cta_btn {
-    grid-column: 1 / 4;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ---- Forside velkomsttekst --- */
-
-.forside_velkomst {
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    line-height: 1.5em;
-}
-
-.forside_velkomst h1 {
-    font-size: 3em;
-    padding-top: 0.7em;
-    padding-bottom: 0.5em;
-}
-
-.forside_velkomst em {
-    font-style: italic;
-    font-size: 1.2em;
-}
-
-
-/* --- Billede karrusel --- */
-
-/* Nyhedstekst */
-.forside_nyheder {
-    text-align: center;
-    font-size: 3em;
-    padding-top: 4%;
-}
-
-/* Text på karrusellen */
-.wrapper .carousel .carousel_item {
-    position: relative;
-    display: inline-block;
-}
-
-.wrapper .carousel .carousel_item .carousel_text {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    color: var(--clr_secondary_pastel);
-    padding-left: 30px;
-}
-
-.wrapper .carousel .carousel_item img {
-    display: block;
-    width: 21em;
-}
-
-.carousel_text {
-   line-height: 1.5em;
-}
-
-.carousel_text h3 {
-    font-size: 1.5em;
-    font-family: var(--header_font_fam);
-    margin-top: -4em;
-}
-
-.carousel_text a {
-    color: var(--clr_1st_primary_light);
-    font-style: italic;
-}
-
-/* Selve karrusellen */
-.wrapper .carousel {
-    white-space: nowrap;
-    cursor: pointer;
-    overflow: hidden;
-    scroll-behavior: smooth; /* Smooth overgang, når man scroller */
-  }
-  
-  .carousel.dragging {
-    scroll-behavior: auto; /* Så scroll følger musen */
-    cursor: grab; /* Så pointer ændrer sig, når man scroller med musen (ikke med pilene) */
-  }
-  
-  .carousel.dragging img {
-    pointer-events: none; /* Så der ikke sker noget, når man trykker på billederne */
-  }
-  
-  .wrapper {
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: -8%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    position: relative;
-    padding: 0 35px;
-  }
-  
-  .wrapper i {
-    top: 50%;
-    background: var(--clr_2nd_primary_dark);
-    height: 45px;
-    width: 55px;
-    text-align: center;
-    line-height: 45px;
-    border-radius: 50%;
-    color: var(--clr_secondary_pastel);
-    cursor: pointer;
-    font-size: 1.2rem;
-    position: absolute;
-    z-index: 1; /* Så pilene ikke forsvinder bag billederne */
-    transform: translateY(-50%);
-  }
-  
-  .wrapper i:first-child {
-    left: 5px;
-    display: none; /* Så man ikke ser pilen til venstre til at starte med */
-  }
-  
-  .wrapper i:last-child {
-    right: -10px;
-  }
-  
-  
-  .carousel img {
-    height: 340px;
-    width: calc(100% / 3);
-    object-fit: cover;
-    border-radius: 5%;
-    border: 7px solid #484c22;
-    border-bottom: 7em solid #484c22;
-    margin-left: 14px;
-  }

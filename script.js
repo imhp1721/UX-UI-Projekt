@@ -1,3 +1,5 @@
+// THIS IS JAVASCRIPT FOR THE LANDINGPAGE INDEX.HTML
+
 /* --- Forsidens billede karrusel --- */
 const carousel = document.querySelector(".carousel"),
 firstImg = carousel.querySelectorAll ("img") [0];
