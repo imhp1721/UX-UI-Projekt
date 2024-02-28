@@ -201,6 +201,14 @@ h6 {
     index
 ----------------------------*/
 
+video {
+    border: 5px solid var(--clr_2nd_primary_medium);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px var(--clr_2nd_primary_dark);
+    margin: 2% 25%;
+    width: 50%;
+}
+
 /* ---- Forside velkomsttekst --- */
 
 .forside_velkomst {
@@ -222,14 +230,6 @@ h6 {
     font-size: 1.2em;
 }
 
-video {
-    border: 5px solid var(--clr_2nd_primary_medium);
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px var(--clr_2nd_primary_dark);
-    margin: 2% 25%;
-    width: 50%;
-}
-
 /* --- Billede karrusel --- */
 
 /* Nyhedstekst */
@@ -240,6 +240,7 @@ video {
 }
 
 /* Text på karrusellen */
+
 .wrapper .carousel .carousel_item {
     position: relative;
     display: inline-block;
@@ -274,7 +275,6 @@ video {
 }
 
 /* Selve karrusellen */
-
 .wrapper .carousel {
     white-space: nowrap;
     cursor: pointer;
@@ -295,7 +295,7 @@ video {
     width: 90%;
     margin-right: auto;
     margin-left: auto;
-    margin-top: -8%;
+    margin-top: -12%;
     display: flex;
     align-items: center;
     justify-content: center;
