@@ -500,11 +500,7 @@ margin-left: 14px;
     Fejl - side 
 -------------------*/
 
-.fejl_hero_img {
-    max-height: 20vh;
-    object-fit: cover;
-    width: 100%;
-}
+
 
 .fejl_main {
     align-items: center;
@@ -515,7 +511,7 @@ margin-left: 14px;
 #fejl_overskrift {
     font-family: var(--main_txt_font_fam);
     font-size: 2rem;
-    margin: 3% 0 5%;
+    margin: 10% 0 3%;
     text-align: center;
 }
 
@@ -526,7 +522,7 @@ margin-left: 14px;
 }
 
 .fejl_img {
-    width: 60%;
+    width: 35%;
 }
 
 /*---------------------------
