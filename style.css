@@ -605,6 +605,7 @@ margin-left: 14px;
     align-items: center;
     display: flex;
     flex-direction: column;
+    padding-top: 5%;
 }
 
 #fejl_overskrift {
