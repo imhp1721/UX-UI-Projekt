@@ -338,8 +338,8 @@ height: 340px;
 width: calc(100% / 3);
 object-fit: cover;
 border-radius: 5%;
-border: 7px solid #484c22;
-border-bottom: 7em solid #484c22;
+border: 7px solid var(--clr_2nd_primary_dark);
+border-bottom: 7em solid var(--clr_2nd_primary_dark);
 margin-left: 14px;
 }
 
@@ -502,8 +502,8 @@ margin-left: 14px;
     background-color: var(--clr_2nd_primary_dark);
     border: 1px solid var(--clr_2nd_primary_dark);
     border-radius: 10px;
-    margin: 5% 5% 5% 20%;
-    max-width: 75vw;
+    margin: 5% 5% 5% 25%;
+    max-width: 70vw;
     padding: 0;
 }
 
@@ -536,7 +536,7 @@ margin-left: 14px;
 
 #pop_up_reste .change_icons {
     display: flex;
-    gap: 10%;
+    gap: 8%;
     grid-area: change;
     justify-content: center;
 }
@@ -571,7 +571,7 @@ margin-left: 14px;
 
 .pop_up_txt p {
     color: var(--clr_secondary_pastel);
-    padding: 5% 10%;
+    padding: 5%;
 }
 
 .pop_up_txt .cta_btn {
